@@ -24,6 +24,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.TargetDataLine;
+import org.json.JSONObject;
 
 public class STT {
 
@@ -37,7 +38,7 @@ public class STT {
 			
 			final TargetDataLine targetDataLine=(TargetDataLine)AudioSystem.getLine(info);
 			targetDataLine.open();
-			System.out.println("starting Recording while 5sec.");
+			System.out.println("starting Recording while 3sec.");
 			targetDataLine.start();
 			Thread stopper=new Thread(new Runnable() {
 				@Override
@@ -54,7 +55,7 @@ public class STT {
 				}
 			});
 			stopper.start();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			targetDataLine.stop();
                         targetDataLine.close();
 			
@@ -104,8 +105,10 @@ public class STT {
 	                    response.append(inputLine);
 	                }
 	                br.close();
-	                //System.out.println(response.toString());
-                        return response.toString();
+	                String msg = response.toString();
+                        JSONObject o = new JSONObject(msg);
+                        String stt = o.getString("text");
+                        return stt;
 	            } else {
 	                System.out.println("error !!!");
                         return null;
