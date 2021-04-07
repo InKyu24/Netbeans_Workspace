@@ -5,13 +5,22 @@
  */
 package my.jes.ai;
 
+import java.awt.Dimension;
 import java.awt.Label;
+import java.awt.Point;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -19,14 +28,15 @@ import javax.swing.SwingWorker;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import my.jes.ai.engine.STT;
+import my.jes.ai.engine.TTS;
 import my.jes.ai.engine.VoiceOrders;
 
 /**
  *
- * @author javan_000
+ * @author 484342
  */
 public class CafeUi extends javax.swing.JFrame {
-
+    JFXPanel fxPanel;
     /**
      * Creates new form CafeUi
      */
@@ -34,9 +44,39 @@ public class CafeUi extends javax.swing.JFrame {
         initComponents();
         setUi();
         System.out.println("생성자");
-        //startAI();
+        startAI();
+        initFX();
     }
+    
+    private void initFX() {
+	JFrame frame = new JFrame("FX");
+	//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.getContentPane().setLayout(null);
+	final JButton jButton = new JButton("취소");
+	fxPanel = new JFXPanel();
+	frame.add(jButton);
+	frame.add(fxPanel);
+	//frame.setVisible(true);
+	jButton.setSize(new Dimension(200, 27));
+	fxPanel.setSize(new Dimension(300, 300));
+	fxPanel.setLocation(new Point(0, 27));
+	frame.getContentPane().setPreferredSize(new Dimension(300, 327));
+	frame.pack();
+	frame.setResizable(false);
+    }
+    
+    private void initAndLoadWebView(final JFXPanel fxPanel) {
+            Group group = new Group();
+            Scene scene = new Scene(group);
+            fxPanel.setScene(scene);
+            WebView webView = new WebView();
+            group.getChildren().add(webView);
+            webView.setMinSize(300, 300);
+            webView.setMaxSize(300, 300);
+            WebEngine webEngine = webView.getEngine();
 
+            webEngine.load("file:///D:/GITHUB/Netbeans_Workspace/AI_Cafe_Maven/index.html");
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -153,7 +193,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel4.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel4.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\Ice_Americano.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Ice_Americano.jpg")); // NOI18N
         jPanel4.add(jLabel1);
         jLabel1.setBounds(0, 0, 220, 230);
 
@@ -197,7 +237,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel5.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel5.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\Hot_Americano.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Hot_Americano.jpg")); // NOI18N
         jPanel5.add(jLabel2);
         jLabel2.setBounds(0, 0, 240, 240);
 
@@ -226,7 +266,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel6.setLayout(null);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\Ice_Latte.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Ice_Latte.jpg")); // NOI18N
         jPanel6.add(jLabel3);
         jLabel3.setBounds(0, 0, 230, 230);
 
@@ -265,7 +305,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel7.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel7.setLayout(null);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\Hot_Latte.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Hot_Latte.jpg")); // NOI18N
         jPanel7.add(jLabel4);
         jLabel4.setBounds(0, 0, 220, 210);
 
@@ -298,7 +338,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel8.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel8.setLayout(null);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\blackTea.jpg")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\blackTea.jpg")); // NOI18N
         jPanel8.add(jLabel13);
         jLabel13.setBounds(0, 0, 220, 230);
 
@@ -342,7 +382,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel9.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel9.setLayout(null);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\greenTea.jpg")); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\greenTea.jpg")); // NOI18N
         jPanel9.add(jLabel15);
         jLabel15.setBounds(0, 0, 230, 230);
 
@@ -371,7 +411,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel10.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel10.setLayout(null);
 
-        jLabel17.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\peppermint.jpg")); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\peppermint.jpg")); // NOI18N
         jPanel10.add(jLabel17);
         jLabel17.setBounds(0, 0, 230, 230);
 
@@ -400,7 +440,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel11.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel11.setLayout(null);
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\chamomile.jpg")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\chamomile.jpg")); // NOI18N
         jPanel11.add(jLabel19);
         jLabel19.setBounds(0, 0, 220, 210);
 
@@ -433,7 +473,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel13.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel13.setLayout(null);
 
-        jLabel21.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\cola.jpg")); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\cola.jpg")); // NOI18N
         jPanel13.add(jLabel21);
         jLabel21.setBounds(0, 0, 220, 230);
 
@@ -477,7 +517,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel14.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel14.setLayout(null);
 
-        jLabel23.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\cider.jpg")); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\cider.jpg")); // NOI18N
         jPanel14.add(jLabel23);
         jLabel23.setBounds(0, 0, 230, 230);
 
@@ -506,7 +546,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel15.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel15.setLayout(null);
 
-        jLabel25.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\orengeJuice.jpg")); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\orengeJuice.jpg")); // NOI18N
         jPanel15.add(jLabel25);
         jLabel25.setBounds(0, 0, 230, 230);
 
@@ -535,7 +575,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel16.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel16.setLayout(null);
 
-        jLabel27.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\Grapefruit.jpg")); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Grapefruit.jpg")); // NOI18N
         jPanel16.add(jLabel27);
         jLabel27.setBounds(0, 0, 220, 210);
 
@@ -618,7 +658,7 @@ public class CafeUi extends javax.swing.JFrame {
         jLabel5.setText("AI Cafe");
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\Netbean_Project\\AI_Cafe_Maven\\img\\mic.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\mic.png")); // NOI18N
         jLabel8.setText("\"커피주문\" 혹은 \"케익주문\"이라고 말해보세요");
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -655,7 +695,7 @@ public class CafeUi extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(165, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         pack();
@@ -776,15 +816,21 @@ Hashtable<String,Integer> basket=new Hashtable();
 
         @Override
         protected Object doInBackground() {
-            String stt = STT.process();
-            System.out.println(stt);
-            VoiceOrders.process(stt);
+            String stt = STT.process(); // 사용자 음성을 텍스트로 바꿈
+            String chatbotMsg = VoiceOrders.process(stt); // 챗봇 요청 [텍스트 응답]
+            TTS.process(chatbotMsg); // 챗봇 메시지를 음성으로 바꿈 (tts.mp3 생성됨)
+            
             return null;
         }
 
         @Override
         protected void done() {
             jLabel8.setIcon(new ImageIcon("img\\mic.png"));
+            Platform.runLater(new Runnable() {
+                public void run() {
+                    initAndLoadWebView(fxPanel);
+                }
+            });        
         }
         
     }

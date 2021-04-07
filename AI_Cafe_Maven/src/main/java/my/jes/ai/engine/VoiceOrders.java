@@ -30,7 +30,7 @@ import org.json.JSONObject;
  */
 public class VoiceOrders {
 
-     public static void process(String voiceMessage) {
+     public static String process(String voiceMessage) {
 
         String chatbotMessage = "";
 
@@ -41,7 +41,7 @@ public class VoiceOrders {
 
            // String voiceMessage="문 열어요?";
             String message = getReqMessage(voiceMessage);
-            System.out.println("##" + message);
+            //System.out.println("##" + message);
 
             String secretKey="VndkQ3hpbVV5TlZBc1ZGZnNId2t4QWVXVkN4Qm1ieVI=";
             String encodeBase64String = makeSignature(message, secretKey);
@@ -77,11 +77,20 @@ public class VoiceOrders {
             } else {  // Error occurred
                 chatbotMessage = con.getResponseMessage();
             }
-            System.out.println("하이");
-
-            System.out.println(chatbotMessage);
+            //System.out.println(chatbotMessage);
+                //JSON
+                // {"version":"v2","userId":"U47b00b58c90f8e47428af8b7bddc1231heo2jes","timestamp":1617754918065,"bubbles":[{"type":"text","data":{"description":"어떤 커피를 주문하시겠어요?"},"slot":[{"name":"커피종류","value":""},{"name":"커리온도","value":""},{"name":"커피사이즈","value":""},{"name":"커피몇잔","value":""}]}],"scenario":{"name":"커피주문","chatUtteranceSetId":3295786,"intent":["주문"]},"entities":[],"keywords":[],"event":"send"}
+            //JSON parsing
+            JSONObject o = new JSONObject(chatbotMessage);
+            JSONArray  bubbles = o.getJSONArray("bubbles");
+            JSONObject bubbles0 = bubbles.getJSONObject(0);
+            JSONObject data = bubbles0.getJSONObject("data");
+            String description = (String) data.get("description");
+            System.out.println("----->"+description);
+            return description;
         } catch (Exception e) {
             System.out.println(e);
+            return "죄송합니다. 다시 말씀해주세요." ;
         }
 
         
