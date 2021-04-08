@@ -79,7 +79,7 @@ public class VoiceOrders {
             }
             //System.out.println(chatbotMessage);
                 //JSON
-                // {"version":"v2","userId":"U47b00b58c90f8e47428af8b7bddc1231heo2jes","timestamp":1617754918065,"bubbles":[{"type":"text","data":{"description":"어떤 커피를 주문하시겠어요?"},"slot":[{"name":"커피종류","value":""},{"name":"커리온도","value":""},{"name":"커피사이즈","value":""},{"name":"커피몇잔","value":""}]}],"scenario":{"name":"커피주문","chatUtteranceSetId":3295786,"intent":["주문"]},"entities":[],"keywords":[],"event":"send"}
+                // {"version":"v2","userId":"U47b00b58c90f8e47428af8b7bddc1231heo2jes","timestamp":1617754918065,"bubbles":[{"type":"text","data":{"description":"어떤 커피를 주문하시겠어요?"},"slot":[{"name":"커피종류","value":""},{"name":"커피온도","value":""},{"name":"커피사이즈","value":""},{"name":"커피몇잔","value":""}]}],"scenario":{"name":"커피주문","chatUtteranceSetId":3295786,"intent":["주문"]},"entities":[],"keywords":[],"event":"send"}
             //JSON parsing
             JSONObject o = new JSONObject(chatbotMessage);
             JSONArray  bubbles = o.getJSONArray("bubbles");
