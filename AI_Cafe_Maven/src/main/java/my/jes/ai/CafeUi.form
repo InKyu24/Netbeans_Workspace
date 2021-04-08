@@ -55,7 +55,7 @@
                   <Component id="jPanel17" min="-2" pref="486" max="-2" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="194" max="32767" attributes="0"/>
+              <EmptySpace pref="176" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -118,7 +118,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel1">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\Ice_Americano.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\Ice_Americano.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -202,7 +202,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel2">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\Hot_Americano.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\Hot_Americano.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -286,7 +286,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel3">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\Ice_Latte.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\Ice_Latte.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -370,7 +370,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel4">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\Hot_Latte.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\Hot_Latte.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -472,7 +472,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel13">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\blackTea.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\blackTea.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -547,7 +547,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel15">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\greenTea.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\greenTea.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -622,7 +622,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel17">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\peppermint.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\peppermint.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -697,7 +697,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel19">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\chamomile.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\chamomile.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -790,7 +790,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel21">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\cola.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\cola.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -865,7 +865,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel23">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\cider.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\cider.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -940,7 +940,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel25">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\orengeJuice.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\orengeJuice.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -1015,7 +1015,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel27">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\Grapefruit.jpg"/>
+                          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\Grapefruit.jpg"/>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -1189,7 +1189,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\tool\AI_Cafe_Maven\img\mic.png"/>
+          <Image iconType="2" name="D:\GITHUB\Netbeans_Workspace\AI_Cafe_Maven\img\mic.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&quot;&#xcee4;&#xd53c;&#xc8fc;&#xbb38;&quot; &#xd639;&#xc740; &quot;&#xcf00;&#xc775;&#xc8fc;&#xbb38;&quot;&#xc774;&#xb77c;&#xace0; &#xb9d0;&#xd574;&#xbcf4;&#xc138;&#xc694;"/>
       </Properties>

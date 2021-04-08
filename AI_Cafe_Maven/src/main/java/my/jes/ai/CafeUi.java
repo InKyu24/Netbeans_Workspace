@@ -183,7 +183,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel4.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel4.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\Ice_Americano.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Ice_Americano.jpg")); // NOI18N
         jPanel4.add(jLabel1);
         jLabel1.setBounds(0, 0, 220, 230);
 
@@ -207,11 +207,11 @@ public class CafeUi extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton2);
-        jButton2.setBounds(320, 120, 39, 23);
+        jButton2.setBounds(320, 120, 37, 23);
 
         jLabel9.setText("아이스 아메리카노");
         jPanel4.add(jLabel9);
-        jLabel9.setBounds(240, 90, 110, 15);
+        jLabel9.setBounds(240, 90, 110, 14);
 
         jButton9.setText("장바구니 담기");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -227,13 +227,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel5.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel5.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\Hot_Americano.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Hot_Americano.jpg")); // NOI18N
         jPanel5.add(jLabel2);
         jLabel2.setBounds(0, 0, 240, 240);
 
         jLabel10.setText("핫 아메리카노");
         jPanel5.add(jLabel10);
-        jLabel10.setBounds(240, 90, 110, 15);
+        jLabel10.setBounds(240, 90, 110, 14);
 
         jTextField2.setText("0");
         jPanel5.add(jTextField2);
@@ -255,7 +255,7 @@ public class CafeUi extends javax.swing.JFrame {
             }
         });
         jPanel5.add(jButton4);
-        jButton4.setBounds(320, 120, 39, 23);
+        jButton4.setBounds(320, 120, 37, 23);
 
         jButton10.setText("장바구니 담기");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -271,13 +271,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel6.setLayout(null);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\Ice_Latte.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Ice_Latte.jpg")); // NOI18N
         jPanel6.add(jLabel3);
         jLabel3.setBounds(0, 0, 230, 230);
 
         jLabel11.setText("아이스 카페라떼");
         jPanel6.add(jLabel11);
-        jLabel11.setBounds(240, 90, 110, 15);
+        jLabel11.setBounds(240, 90, 110, 14);
 
         jTextField3.setText("0");
         jPanel6.add(jTextField3);
@@ -299,7 +299,7 @@ public class CafeUi extends javax.swing.JFrame {
             }
         });
         jPanel6.add(jButton6);
-        jButton6.setBounds(320, 120, 39, 23);
+        jButton6.setBounds(320, 120, 37, 23);
 
         jButton11.setText("장바구니 담기");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -315,13 +315,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel7.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel7.setLayout(null);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\Hot_Latte.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Hot_Latte.jpg")); // NOI18N
         jPanel7.add(jLabel4);
         jLabel4.setBounds(0, 0, 220, 210);
 
         jLabel12.setText("핫 카페라떼");
         jPanel7.add(jLabel12);
-        jLabel12.setBounds(240, 90, 110, 15);
+        jLabel12.setBounds(240, 90, 110, 14);
 
         jTextField4.setText("0");
         jPanel7.add(jTextField4);
@@ -343,7 +343,7 @@ public class CafeUi extends javax.swing.JFrame {
             }
         });
         jPanel7.add(jButton8);
-        jButton8.setBounds(320, 120, 39, 23);
+        jButton8.setBounds(320, 120, 37, 23);
 
         jButton12.setText("장바구니 담기");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -363,7 +363,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel8.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel8.setLayout(null);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\blackTea.jpg")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\blackTea.jpg")); // NOI18N
         jPanel8.add(jLabel13);
         jLabel13.setBounds(0, 0, 220, 230);
 
@@ -377,11 +377,11 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton14.setText("-");
         jPanel8.add(jButton14);
-        jButton14.setBounds(320, 120, 39, 23);
+        jButton14.setBounds(320, 120, 37, 23);
 
         jLabel14.setText("홍차");
         jPanel8.add(jLabel14);
-        jLabel14.setBounds(240, 90, 110, 15);
+        jLabel14.setBounds(240, 90, 110, 14);
 
         jButton15.setText("장바구니 담기");
         jPanel8.add(jButton15);
@@ -392,13 +392,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel9.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel9.setLayout(null);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\greenTea.jpg")); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\greenTea.jpg")); // NOI18N
         jPanel9.add(jLabel15);
         jLabel15.setBounds(0, 0, 230, 230);
 
         jLabel16.setText("녹차");
         jPanel9.add(jLabel16);
-        jLabel16.setBounds(240, 90, 110, 15);
+        jLabel16.setBounds(240, 90, 110, 14);
 
         jTextField6.setText("0");
         jPanel9.add(jTextField6);
@@ -410,7 +410,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton17.setText("-");
         jPanel9.add(jButton17);
-        jButton17.setBounds(320, 120, 39, 23);
+        jButton17.setBounds(320, 120, 37, 23);
 
         jButton18.setText("장바구니 담기");
         jPanel9.add(jButton18);
@@ -421,13 +421,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel10.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel10.setLayout(null);
 
-        jLabel17.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\peppermint.jpg")); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\peppermint.jpg")); // NOI18N
         jPanel10.add(jLabel17);
         jLabel17.setBounds(0, 0, 230, 230);
 
         jLabel18.setText("페퍼민트");
         jPanel10.add(jLabel18);
-        jLabel18.setBounds(240, 90, 110, 15);
+        jLabel18.setBounds(240, 90, 110, 14);
 
         jTextField7.setText("0");
         jPanel10.add(jTextField7);
@@ -439,7 +439,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton20.setText("-");
         jPanel10.add(jButton20);
-        jButton20.setBounds(320, 120, 39, 23);
+        jButton20.setBounds(320, 120, 37, 23);
 
         jButton21.setText("장바구니 담기");
         jPanel10.add(jButton21);
@@ -450,13 +450,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel11.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel11.setLayout(null);
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\chamomile.jpg")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\chamomile.jpg")); // NOI18N
         jPanel11.add(jLabel19);
         jLabel19.setBounds(0, 0, 220, 210);
 
         jLabel20.setText("캐모마일");
         jPanel11.add(jLabel20);
-        jLabel20.setBounds(240, 90, 110, 15);
+        jLabel20.setBounds(240, 90, 110, 14);
 
         jTextField8.setText("0");
         jPanel11.add(jTextField8);
@@ -468,7 +468,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton23.setText("-");
         jPanel11.add(jButton23);
-        jButton23.setBounds(320, 120, 39, 23);
+        jButton23.setBounds(320, 120, 37, 23);
 
         jButton24.setText("장바구니 담기");
         jPanel11.add(jButton24);
@@ -483,7 +483,7 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel13.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel13.setLayout(null);
 
-        jLabel21.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\cola.jpg")); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\cola.jpg")); // NOI18N
         jPanel13.add(jLabel21);
         jLabel21.setBounds(0, 0, 220, 230);
 
@@ -497,11 +497,11 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton26.setText("-");
         jPanel13.add(jButton26);
-        jButton26.setBounds(320, 120, 39, 23);
+        jButton26.setBounds(320, 120, 37, 23);
 
         jLabel22.setText("콜라");
         jPanel13.add(jLabel22);
-        jLabel22.setBounds(240, 90, 110, 15);
+        jLabel22.setBounds(240, 90, 110, 14);
 
         jButton27.setText("장바구니 담기");
         jPanel13.add(jButton27);
@@ -512,13 +512,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel14.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel14.setLayout(null);
 
-        jLabel23.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\cider.jpg")); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\cider.jpg")); // NOI18N
         jPanel14.add(jLabel23);
         jLabel23.setBounds(0, 0, 230, 230);
 
         jLabel24.setText("사이다");
         jPanel14.add(jLabel24);
-        jLabel24.setBounds(240, 90, 110, 15);
+        jLabel24.setBounds(240, 90, 110, 14);
 
         jTextField10.setText("0");
         jPanel14.add(jTextField10);
@@ -530,7 +530,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton29.setText("-");
         jPanel14.add(jButton29);
-        jButton29.setBounds(320, 120, 39, 23);
+        jButton29.setBounds(320, 120, 37, 23);
 
         jButton30.setText("장바구니 담기");
         jPanel14.add(jButton30);
@@ -541,13 +541,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel15.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel15.setLayout(null);
 
-        jLabel25.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\orengeJuice.jpg")); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\orengeJuice.jpg")); // NOI18N
         jPanel15.add(jLabel25);
         jLabel25.setBounds(0, 0, 230, 230);
 
         jLabel26.setText("오렌지쥬스");
         jPanel15.add(jLabel26);
-        jLabel26.setBounds(240, 90, 110, 15);
+        jLabel26.setBounds(240, 90, 110, 14);
 
         jTextField11.setText("0");
         jPanel15.add(jTextField11);
@@ -559,7 +559,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton32.setText("-");
         jPanel15.add(jButton32);
-        jButton32.setBounds(320, 120, 39, 23);
+        jButton32.setBounds(320, 120, 37, 23);
 
         jButton33.setText("장바구니 담기");
         jPanel15.add(jButton33);
@@ -570,13 +570,13 @@ public class CafeUi extends javax.swing.JFrame {
         jPanel16.setPreferredSize(new java.awt.Dimension(300, 230));
         jPanel16.setLayout(null);
 
-        jLabel27.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\Grapefruit.jpg")); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\Grapefruit.jpg")); // NOI18N
         jPanel16.add(jLabel27);
         jLabel27.setBounds(0, 0, 220, 210);
 
         jLabel28.setText("자몽쥬스");
         jPanel16.add(jLabel28);
-        jLabel28.setBounds(240, 90, 110, 15);
+        jLabel28.setBounds(240, 90, 110, 14);
 
         jTextField12.setText("0");
         jPanel16.add(jTextField12);
@@ -588,7 +588,7 @@ public class CafeUi extends javax.swing.JFrame {
 
         jButton35.setText("-");
         jPanel16.add(jButton35);
-        jButton35.setBounds(320, 120, 39, 23);
+        jButton35.setBounds(320, 120, 37, 23);
 
         jButton36.setText("장바구니 담기");
         jPanel16.add(jButton36);
@@ -662,7 +662,7 @@ public class CafeUi extends javax.swing.JFrame {
         jLabel5.setText("AI Cafe");
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\tool\\AI_Cafe_Maven\\img\\mic.png")); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\GITHUB\\Netbeans_Workspace\\AI_Cafe_Maven\\img\\mic.png")); // NOI18N
         jLabel8.setText("\"커피주문\" 혹은 \"케익주문\"이라고 말해보세요");
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -699,7 +699,7 @@ public class CafeUi extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 486, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(194, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
 
         pack();
