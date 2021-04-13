@@ -1036,7 +1036,7 @@ public class CafeUi extends javax.swing.JFrame {
 	webView.setMaxSize(300, 300);
 	WebEngine webEngine = webView.getEngine();
 
-	webEngine.load("file:///D:/tool/AI_Cafe_Maven/index.html");
+	webEngine.load("file:///D:/GITHUB/Netbeans_Workspace/AI_Cafe_Maven/index.html");
 
     }   
 
