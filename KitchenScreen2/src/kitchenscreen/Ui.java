@@ -267,7 +267,10 @@ public class Ui extends javax.swing.JFrame {
                 System.out.println("QR생성");                
                 
                 try {
-                    URL url = new URL("http://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://121.128.43.56:8090/output.jes?order_group_no="+order_group_no);
+                    Properties prop = new Properties();
+                    prop.load(new FileReader("config.properties"));
+                    String ip = (String)prop.get("server.ip");
+                    URL url = new URL("http://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://"+ip+":8090/output.jes?order_group_no="+order_group_no);
                     HttpURLConnection con = (HttpURLConnection) url.openConnection();
                     con.setRequestMethod("GET");
                     System.out.println("응답메세지 : " + con.getResponseMessage());

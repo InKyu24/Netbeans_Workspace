@@ -43,7 +43,7 @@ public class TTS {
            con.setRequestProperty("X-NCP-APIGW-API-KEY-ID", clientId);//header
            con.setRequestProperty("X-NCP-APIGW-API-KEY", clientSecret);
            // post request
-           String postParams = "speaker=nsinu&volume=0&speed=0&pitch=0&format=mp3&text=" + text;           
+           String postParams = "speaker=nara&volume=0&speed=0&pitch=0&format=mp3&text=" + text;           
            con.setDoOutput(true);
            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
            wr.writeBytes(postParams);
